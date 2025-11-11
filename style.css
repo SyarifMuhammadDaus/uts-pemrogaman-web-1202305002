@@ -1,0 +1,129 @@
+/* === Tampilan utama seluruh halaman === */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #f3f6fb;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+/* === Judul dan teks utama === */
+h1, h2, h3, p, b {
+    color: #1565c0;
+    text-align: center;
+}
+
+/* === Link === */
+a {
+    color: #1976d2;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #0d47a1;
+    text-decoration: underline;
+}
+
+/* === Tabel === */
+table {
+    border-collapse: collapse;
+    width: 90%;
+    margin: 20px auto;
+    background: #fff;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 12px 16px;
+    text-align: left;
+}
+
+th {
+    background-color: #2196F3;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f8ff;
+}
+
+tr:hover {
+    background-color: #e3f2fd;
+}
+
+/* Kolom aksi biar tombolnya sejajar */
+.action-buttons {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px; /* jarak antar tombol */
+}
+
+/* Tombol umum */
+.action-buttons a {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  color: #fff;
+  transition: 0.2s;
+}
+
+/* Tombol Edit */
+.action-buttons a.edit {
+  background-color: #1e90ff; /* biru */
+}
+
+.action-buttons a.edit:hover {
+  background-color: #0077e6;
+}
+
+/* Tombol Hapus */
+.action-buttons a.delete {
+  background-color: #ff4d4d; /* merah */
+}
+
+.action-buttons a.delete:hover {
+  background-color: #d93636;
+}
+
+/* === Form container === */
+.container {
+    width: 90%;
+    max-width: 600px;
+    margin: 30px auto;
+    background: #fff;
+    padding: 25px 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.container h2 {
+    margin-top: 0;
+    color: #1565c0;
+    text-align: center;
+}
+
+/* === Input dan Form === */
+input[type="text"], input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+input[type="text"]:focus, input[type="number"]:focus {
+    outline: none;
+    border-color: #2196F3;
+    box-shadow: 0 0 3px #90caf9;
+}
+
+form table {
+    width: 100%;
+}
